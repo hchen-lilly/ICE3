@@ -12,7 +12,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-pytest = "5.2.2"
+#pytest = "5.2.2"
 biopython = ">=1.70"
 coverage = ">=4.4.1"
 pytest-cov = "2.5.1"
