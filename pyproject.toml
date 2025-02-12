@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ice-master"
+version = "0.1.0"
+
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    # List your dependencies here, or leave it empty to use requirements.txt separately
+]
+
+[project.urls]
+Homepage = "https://github.com/hchen-lilly/ICE3"
+Repository = "https://github.com/hchen-lilly/ICE3.git"
+
+[tool.setuptools]
+packages = ["ice_analysis_single", "ice_analysis_batch"]  # Adjust based on actual package structure
