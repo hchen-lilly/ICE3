@@ -8,9 +8,18 @@ version = "0.1.0"
 
 readme = "README.md"
 license = {file = "LICENSE"}
-dependencies = [
-    # List your dependencies here, or leave it empty to use requirements.txt separately
-]
+[tool.dependencies]
+pytest==5.2.2
+biopython>=1.70
+coverage>=4.4.1
+pytest-cov==2.5.1
+matplotlib>=2.1.0
+numpy>=1.13.3
+pandas>=0.20.3
+scipy>=0.19.1
+scikit-learn>=0.0
+xlrd>=1.1.0
+xlsxwriter>=1.0.2
 
 [project.urls]
 Homepage = "https://github.com/hchen-lilly/ICE3"
