@@ -17,4 +17,12 @@ Homepage = "https://github.com/hchen-lilly/ICE3"
 Repository = "https://github.com/hchen-lilly/ICE3.git"
 
 [tool.setuptools]
-packages = ["ice_analysis_single", "ice_analysis_batch"]  # Adjust based on actual package structure
+packages = ["ice"]
+include-package-data = true
+zip-safe = false
+
+[project.scripts]
+synthego_ice = "ice.analysis:single_sanger_analysis_cli"
+synthego_ice_batch = "ice.analysis:multiple_sanger_analysis_cli"
+
+# Adjust based on actual package structure
