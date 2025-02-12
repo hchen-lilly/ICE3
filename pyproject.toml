@@ -5,10 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ice"
 version = "0.1.0"
-
 readme = "README.md"
 license = {file = "LICENSE"}
-[tool.dependencies]
+
+[tool.poetry.dependencies]
 pytest==5.2.2
 biopython>=1.70
 coverage>=4.4.1
