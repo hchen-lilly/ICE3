@@ -259,7 +259,8 @@ def multiple_sanger_analysis(definition_file, output_dir,
             metadata = pd.DataFrame.from_dict([md])
             metadata.to_excel(writer, sheet_name='Metadata')
 
-        writer.save()
+        #writer.save()
+        writer.close()
 
         return out_dict
     else:
