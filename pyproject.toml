@@ -1,36 +1,30 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
 
-[project]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
 name = "ice"
 version = "0.1.0"
+description = "ICE3 analysis tool"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
 readme = "README.md"
-license = {file = "LICENSE"}
-dependencies = [
-    "pytest==5.2.2",
-    "biopython>=1.70",
-    "coverage>=4.4.1",
-    "pytest-cov==2.5.1",
-    "matplotlib>=2.1.0",
-    "numpy>=1.13.3",
-    "pandas>=0.20.3",
-    "scipy>=0.19.1",
-    "scikit-learn>=0.19.1",  # Corrected from `sklearn`
-    "xlrd>=1.1.0",
-    "xlsxwriter>=1.0.2"
-]
 
-[project.urls]
-Homepage = "https://github.com/hchen-lilly/ICE3"
-Repository = "https://github.com/hchen-lilly/ICE3.git"
+[tool.poetry.dependencies]
+pytest = "5.2.2"
+biopython = ">=1.70"
+coverage = ">=4.4.1"
+pytest-cov = "2.5.1"
+matplotlib = ">=2.1.0"
+numpy = ">=1.13.3"
+pandas = ">=0.20.3"
+scipy = ">=0.19.1"
+scikit-learn = ">=0.19.1"
+xlrd = ">=1.1.0"
+xlsxwriter = ">=1.0.2"
 
-[tool.setuptools]
-packages = ["ice"]
-include-package-data = true
-zip-safe = false
-
-[project.scripts]
+[tool.poetry.scripts]
 synthego_ice = "ice.analysis:single_sanger_analysis_cli"
 synthego_ice_batch = "ice.analysis:multiple_sanger_analysis_cli"
 
